@@ -1,1 +1,103 @@
 
+/* Configurações globais para resetar margens e definir a fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilização do Menu de Navegação (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px 10%;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Estilização da Seção Principal (Hero) */
+.hero-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* Estilização do Botão Chamativo */
+.btn-principal {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(56, 189, 248, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* Estilização do Rodapé */
+.footer {
+    background-color: #0f172a;
+    color: #64748b;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+}
